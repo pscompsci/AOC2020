@@ -32,8 +32,8 @@ func part2(input []int, targetSum int) {
 	found := false
 
 	for ; l < m; l++ {
-		m := l + 1
-		r := len(input) - 1
+		m = l + 1
+		r = len(input) - 1
 		for m < r && !found {
 			if input[l]+input[m]+input[r] < targetSum {
 				m++
